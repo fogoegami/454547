@@ -66,8 +66,8 @@
 	<widget source="ScreenPath" render="Label" font="RegularBold;24" backgroundColor="OE_Background" position="95,0" size="1290,70" halign="center" valign="top" transparent="1"/>
   </screen>
   <screen name="TitleInformation">
-	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="405,40" size="1500,90" halign="center" valign="top" transparent="1"/>
-	<widget source="ScreenPath" render="Label" font="RegularBold;22" backgroundColor="OE_Background" position="405,15" size="1500,35" halign="center" valign="top" transparent="1"/>
+	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="405,40" size="1490,90" halign="center" valign="top" transparent="1"/>
+	<widget source="ScreenPath" render="Label" font="RegularBold;22" backgroundColor="OE_Background" position="405,15" size="1490,35" halign="center" valign="top" transparent="1"/>
   </screen>
   <screen name="TitleSlim">
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="85,0" size="955,90" halign="center" valign="center" transparent="1"/>
@@ -287,28 +287,6 @@
 	<eLabel backgroundColor="blue_light" name="" position="110,965" size="1255,2" zPosition="-9"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="90,1033" size="1300,2" zPosition="-15"/>
   </screen>
-	<!-- SCREEN OPENVISION-->
-  <screen name="ScreenOpenVision">
-	<panel name="ClockInformation"/>
-	<panel name="TitleInformation"/>
-	<panel name="ButtonsInformation"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,15" size="1920,1050" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="0,15" size="1920,2" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="410,130" size="1500,2" zPosition="-9"/>
-	<eLabel backgroundColor="blue_light" name="" position="410,950" size="1500,2" zPosition="-9"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="0,1065" size="1920,2" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="0,center" size="400,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="un5678a4" backgroundColor="blue_light" position="60,130" size="275,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="picon_default.png" position="85,150" size="220,132" transparent="1" zPosition="10"/>
-	<eLabel backgroundColor="blue_light" name="" position="60,950" size="275,2" zPosition="-9"/>
-	<eLabel backgroundColor="blue_light" name="" position="410,950" size="1505,2" zPosition="-9"/>
-	<eLabel text="OpenVision" position="0,330" size="400,70" font="RegularBold;40" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<eLabel text="Lets define enigma2 once more" position="0,405" size="400,70" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<eLabel text="Report problems to:" position="0,530" size="400,70" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<eLabel text="https://openvision.tech" position="0,590" size="400,70" font="RegularBold;23" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<eLabel text="Sources are available at:" position="0,715" size="400,70" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<eLabel text="https://github.com/OpenVisionE2" position="0,790" size="400,35" font="RegularBold;23" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
-  </screen>
 	<!-- SLIM SCREEN -->
   <screen name="SlimScreen">
 	<panel name="Clock"/>
@@ -323,18 +301,37 @@
 	<eLabel backgroundColor="blue_light" name="" position="100,975" size="950,2" zPosition="-9"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="80,1077" size="970,3" zPosition="-9"/>
   </screen>
-	<!-- INFORMATION STANDARD -->
-  <screen name="TemplateInformation">
+	<!-- FRAME MENUS OPENVISION -->
+  <screen name="FrameInformation">
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,15" size="1920,1050" zPosition="-15"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="0,center" size="400,1080" zPosition="-11" valign="center"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="400,15" size="1510,2" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="410,130" size="1490,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="410,950" size="1490,2" zPosition="-9"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="400,1065" size="1510,2" zPosition="-15"/>
+	<eLabel name="" foregroundColor="un5678a4" backgroundColor="blue_light" position="60,130" size="275,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="60,950" size="275,2" zPosition="-9"/>
+  </screen>
+	<!-- SCREEN OPENVISION-->
+  <screen name="ScreenOpenVision">
+	<panel name="FrameInformation"/>
 	<panel name="ClockInformation"/>
 	<panel name="TitleInformation"/>
 	<panel name="ButtonsInformation"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,15" size="1920,1050" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="0,15" size="1920,2" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="410,130" size="1500,2" zPosition="-9"/>
-	<eLabel backgroundColor="blue_light" name="" position="410,950" size="1500,2" zPosition="-9"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="0,1065" size="1920,2" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="0,center" size="400,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="un5678a4" backgroundColor="blue_light" position="60,130" size="275,2" zPosition="-9"/>
+	<ePixmap alphatest="blend" pixmap="picon_default.png" position="85,150" size="220,132" transparent="1" zPosition="10"/>
+	<eLabel text="OpenVision" position="0,330" size="400,70" font="RegularBold;40" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<eLabel text="Lets define enigma2 once more" position="0,405" size="400,70" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<eLabel text="Report problems to:" position="0,530" size="400,70" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<eLabel text="https://openvision.tech" position="0,590" size="400,70" font="RegularBold;23" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<eLabel text="Sources are available at:" position="0,715" size="400,70" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<eLabel text="https://github.com/OpenVisionE2" position="0,790" size="400,35" font="RegularBold;23" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
+  </screen>
+	<!-- INFORMATION STANDARD -->
+  <screen name="TemplateInformation">
+	<panel name="FrameInformation"/>
+	<panel name="ClockInformation"/>
+	<panel name="TitleInformation"/>
+	<panel name="ButtonsInformation"/>
 	<ePixmap alphatest="blend" pixmap="picon_default.png" position="85,150" size="220,132" transparent="1" zPosition="10"/>
 	<widget source="lab1" render="Label" position="0,330" size="400,70" font="RegularBold;40" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget source="lab2" render="Label" position="0,405" size="400,70" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
@@ -342,7 +339,6 @@
 	<widget source="lab4" render="Label" position="0,590" size="400,70" font="RegularBold;23" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget source="lab5" render="Label" position="0,715" size="400,70" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget source="lab6" render="Label" position="0,790" size="400,35" font="RegularBold;23" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<eLabel backgroundColor="blue_light" name="" position="60,950" size="275,2" zPosition="-9"/>
 	<!-- Button -->
   </screen>
 	 <!-- MESSAGEBOX TEMPLATE-->
