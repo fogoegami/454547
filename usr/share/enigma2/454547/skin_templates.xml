@@ -365,8 +365,8 @@
 	<widget name="arrowdown2" conditional="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup" conditional="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup2" conditional="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<widget name="stepslider" conditional="stepslider" borderWidth="1" position="665,340" size="450,40" foregroundColor="blue_light" zPosition="15" transparent="1"/>
-	<widget name="step" conditional="step" borderWidth="1" position="445,425" size="450,40" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" zPosition="15" transparent="1"/>
+	<widget name="stepslider" conditional="stepslider" borderWidth="1" position="665,340" size="450,35" foregroundColor="blue_light" zPosition="15" transparent="1"/>
+	<widget name="step" conditional="step" borderWidth="1" position="445,340" size="450,40" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" zPosition="15" transparent="1"/>
   </screen>
 	 <!-- MESSAGEBOX TEMPLATE-->
   <screen name="MessageBoxTemplate">

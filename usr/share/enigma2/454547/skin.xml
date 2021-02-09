@@ -926,13 +926,13 @@
   </screen>
   <screen name="AutoTimerWizard" title="Welcome..." backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateWizard"/>
-	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,480" scrollbarMode="showOnDemand" size="1450,500" transparent="1">
+	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,390" scrollbarMode="showOnDemand" size="1450,500" transparent="1">
 	    <convert type="TemplatedMultiContent">
 				{"template":[ MultiContentEntryText(pos=(20,2),size=(1430,45),flags=RT_HALIGN_LEFT,text=0) ],
 				"fonts":[gFont("FHD",30) ],"itemHeight":50}
 	    </convert>
 	</widget>
-	<widget name="config" font="FHD;30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="445,480" size="1450,215" zPosition="1"/>
+	<widget name="config" font="FHD;30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="445,390" size="1450,215" zPosition="1"/>
 	<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="445,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
 	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="350,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
