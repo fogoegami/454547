@@ -3,25 +3,25 @@
 	<!-- CLOCK TEMPLATES -->
 	<!-- <panel name="Clock"/> -->
   <screen name="Clock">
-	<eLabel backgroundColor="OE_NewBg2" position="1450,5" size="405,72" transparent="0" zPosition="2"/>
-	<eLabel backgroundColor="blue_light" name="" position="1451,7" size="403,1" zPosition="2"/>
-	<eLabel backgroundColor="blue_light" name="" position="1451,7" size="1,69" zPosition="2"/>
-	<eLabel backgroundColor="blue_light" name="" position="1853,7" size="1,69" zPosition="2"/>
-	<eLabel backgroundColor="blue_light" name="" position="1451,75" size="403,1" zPosition="2"/>
-	<widget backgroundColor="OE_NewBg" font="RegularBold;45" halign="left" position="1725,8" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
+	<eLabel backgroundColor="OE_NewBg2" position="1440,5" size="430,75" transparent="0" zPosition="2"/>
+	<eLabel backgroundColor="blue_light" name="" position="1441,7" size="428,1" zPosition="2"/>
+	<eLabel backgroundColor="blue_light" name="" position="1441,7" size="1,72" zPosition="2"/>
+	<eLabel backgroundColor="blue_light" name="" position="1868,7" size="1,72" zPosition="2"/>
+	<eLabel backgroundColor="blue_light" name="" position="1441,78" size="428,1" zPosition="2"/>
+	<widget backgroundColor="OE_NewBg" font="RegularBold;40" halign="left" position="1735,10" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
 	    <convert type="ClockToText"></convert>
 	</widget>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;24" halign="center" position="1450,25" zPosition="3" render="Label" size="270,35" source="global.CurrentTime" transparent="1">
+	<widget backgroundColor="OE_NewBg2" font="RegularBold;24" halign="center"  valign="center" position="1443,10" zPosition="3" render="Label" size="290,65" source="global.CurrentTime" transparent="1">
 	    <convert type="ClockToText">FullDate</convert>
 	</widget>
   </screen>
 	<!-- CLOCK EPG -->
   <screen name="FrameClock">
 	<eLabel backgroundColor="OE_NewBg2" position="1460,0" size="400,72" transparent="0" zPosition="2" foregroundColor="white"/>
-	<widget backgroundColor="OE_NewBg" font="RegularBold;45" halign="left" position="1725,0" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
+	<widget backgroundColor="OE_NewBg" font="RegularBold;43" halign="left" position="1720,5" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
 	    <convert type="ClockToText"></convert>
 	</widget>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;24" halign="center" position="1460,17" zPosition="3" render="Label" size="260,35" source="global.CurrentTime" transparent="1">
+	<widget backgroundColor="OE_NewBg2" font="RegularBold;24" halign="center" position="1460,17" zPosition="3" render="Label" size="260,65" source="global.CurrentTime" transparent="1">
 	    <convert type="ClockToText">FullDate</convert>
 	</widget>
   </screen>
