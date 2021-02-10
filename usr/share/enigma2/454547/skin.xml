@@ -997,31 +997,31 @@
 	    <convert type="ServiceName">Name</convert>
 	</widget>
 	<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="680,50" size="1190,90" halign="center"  valign="center" transparent="1"/>
-	<widget name="list" position="670,160" size="1200,750" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="50" serviceItemHeight="50" serviceNumberFont="RegularBold;32" serviceNameFont="RegularBold;32" serviceInfoFont="RegularBold;27" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
-	<widget alphatest="blend" position="535,55" render="Picon" size="100,60" source="ServiceEvent" transparent="1" zPosition="2">
-	    <convert type="ServiceName2">Reference</convert>
+	<widget name="list" position="670,150" size="1200,750" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="50" serviceItemHeight="50" serviceNumberFont="RegularBold;32" serviceNameFont="RegularBold;32" serviceInfoFont="RegularBold;27" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
+	<widget source="ServiceEvent" render="Label" font="RegularBold;20" backgroundColor="OE_NewBg2" foregroundColor="blue_light" position="670,905" size="1200,30" halign="center" valign="center" transparent="1" zPosition="1">
+	    <convert type="TransponderInfo">
+	    </convert>
 	</widget>
-	<widget backgroundColor="OE_NewBg" font="RegularBold;40" halign="left" position="362,65" zPosition="3" render="Label" size="130,50" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
-	    <convert type="ClockToText"></convert>
+	<widget backgroundColor="OE_NewBg" font="RegularBold;28" position="390,65" zPosition="3" render="Label" size="140,30" source="global.CurrentTime" transparent="1" foregroundColor="white">
+	    <convert type="ClockToText">Mixed</convert>
 	</widget>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" position="255,130" zPosition="3" render="Label" size="405,35" source="global.CurrentTime" transparent="1">
-	    <convert type="ClockToText">FullDate</convert>
+	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" position="270,130" zPosition="3" render="Label" size="390,30" source="global.CurrentTime" transparent="1">
+	    <convert type="ClockToText">ShortDate</convert>
 	</widget>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;28" position="280,185" render="Label" size="90,35" source="ServiceEvent" transparent="1">
+	<widget backgroundColor="OE_NewBg2" font="RegularBold;28" position="320,185" render="Label" size="90,30" source="ServiceEvent" transparent="1">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;28" position="370,185" render="Label" size="100,35" source="ServiceEvent" transparent="1">
+	<widget backgroundColor="OE_NewBg2" font="RegularBold;28" position="410,185" render="Label" size="100,30" source="ServiceEvent" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:-%H:%M</convert>
 	</widget>
-	<widget source="Event" render="Label" backgroundColor="OE_NewBg2" font="RegularBold;28" position="475,185" size="115,35" transparent="1">
+	<widget source="Event" render="Label" backgroundColor="OE_NewBg2" font="RegularBold;28" foregroundColor="blue_light" position="515,185" size="115,30" transparent="1">
 	    <convert type="EventTime">Remaining</convert>
 	    <convert type="RemainingToText">NoSeconds</convert>
 	</widget>
-	<widget source="ServiceEvent" render="Label" font="RegularBold;20" backgroundColor="OE_NewBg2" foregroundColor="blue_light" position="330,230" size="195,85" halign="center" valign="center" transparent="1" zPosition="1">
-	    <convert type="TransponderInfo">
-	    </convert>
+	<widget alphatest="blend" position="415,240" render="Picon" size="100,60" source="ServiceEvent" transparent="1" zPosition="2">
+	    <convert type="ServiceName2">Reference</convert>
 	</widget>
 	<widget source="ServiceEvent" font="RegularBold;30" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_NewBg2" foregroundColor="green_light" halign="left" position="50,320" size="600,45" transparent="1" valign="center">
 	    <convert type="EventName">Name</convert>
