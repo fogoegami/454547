@@ -54,7 +54,7 @@
 	<widget source="menu" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="295,275" size="1085,650" transparent="1">
 		<convert type="TemplatedMultiContent">
 				  {"template": [ MultiContentEntryText(pos = (15, 12), size = (1085, 60), flags = RT_HALIGN_LEFT, text = 0) ],
-				  "fonts": [gFont("RegularBold", 35)],
+				  "fonts": [gFont("RegularBold", 33)],
 				  "itemHeight": 65
 				  }
 		</convert>
