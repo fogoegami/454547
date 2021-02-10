@@ -28,10 +28,10 @@
 	<!-- CLOCK INFORMATION -->
   <screen name="ClockInformation">
 	<eLabel backgroundColor="OE_NewBg2" position="0,45" size="400,72" transparent="0" zPosition="2" foregroundColor="white"/>
-	<widget backgroundColor="OE_NewBg" font="RegularBold;30" halign="left" position="150,30" zPosition="3" render="Label" size="100,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
+	<widget backgroundColor="OE_NewBg" font="RegularBold;30" halign="left" position="150,30" zPosition="3" render="Label" size="100,30" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
 	    <convert type="ClockToText"></convert>
 	</widget>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" valign="center" position="5,93" zPosition="3" render="Label" size="390,35" source="global.CurrentTime" transparent="1">
+	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" valign="center" position="0,93" zPosition="3" render="Label" size="395,30" source="global.CurrentTime" transparent="1">
 	    <convert type="ClockToText">LongDate</convert>
 	</widget>
   </screen>

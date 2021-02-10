@@ -368,7 +368,7 @@
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold;32" position="440,930" render="Label" size="130,40" source="session.Event_Now" transparent="1">
+	<widget backgroundColor="OE_Background" font="RegularBold;32" position="435,930" render="Label" size="130,40" source="session.Event_Now" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:-%H:%M</convert>
 	</widget>
@@ -383,7 +383,7 @@
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold;32" position="440,985" render="Label" size="130,40" source="session.Event_Next" transparent="1">
+	<widget backgroundColor="OE_Background" font="RegularBold;32" position="435,985" render="Label" size="130,40" source="session.Event_Next" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:-%H:%M</convert>
 	</widget>
@@ -539,7 +539,7 @@
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget backgroundColor="OE_ListBackground" foregroundColor="green_light" font="RegularBold;28" position="755,188" render="Label" size="100,40" source="session.Event_Now" transparent="1">
+	<widget backgroundColor="OE_ListBackground" foregroundColor="green_light" font="RegularBold;28" position="750,188" render="Label" size="100,40" source="session.Event_Now" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:-%H:%M</convert>
 	</widget>
@@ -557,7 +557,7 @@
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget backgroundColor="OE_ListBackground" foregroundColor="green_light" font="RegularBold;28" position="755,638" render="Label" size="100,40" source="session.Event_Now" transparent="1">
+	<widget backgroundColor="OE_ListBackground" foregroundColor="green_light" font="RegularBold;28" position="750,638" render="Label" size="100,40" source="session.Event_Now" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:-%H:%M</convert>
 	</widget>
@@ -1444,7 +1444,7 @@
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget source="Event" render="Label" font="RegularBold;28" position="200,160" size="100,45" zPosition="2" backgroundColor="OE_NewBg2" foregroundColor="OE_Foreground" transparent="1">
+	<widget source="Event" render="Label" font="RegularBold;28" position="199,160" size="100,45" zPosition="2" backgroundColor="OE_NewBg2" foregroundColor="OE_Foreground" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:-%H:%M</convert>
 	</widget>
