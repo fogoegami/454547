@@ -209,7 +209,7 @@
   <screen name="LanguageWizard" title="Language Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateWizard"/>
 	<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,170" size="1420,90" transparent="1"/>
-	<eLabel backgroundColor="white" name="" position="445,275" size="1460,2" zPosition="-9"/>
+	<eLabel backgroundColor="#0000fafa" name="" position="445,275" size="1460,2" zPosition="-9"/>
 	<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="445,280" size="1460,715" transparent="1">
 	    <convert type="TemplatedMultiContent">
 				{"template":[
@@ -224,7 +224,7 @@
   <screen name="VideoWizard" title="Video Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateWizard"/>
 	<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,160" size="1460,300" transparent="1"/>
-	<eLabel backgroundColor="white" name="" position="445,470" size="1460,2" zPosition="-9"/>
+	<eLabel backgroundColor="#0000fafa" name="" position="445,470" size="1460,2" zPosition="-9"/>
 	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,480" size="1460,525" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1">
 	    <convert type="TemplatedMultiContent">
 				{"template":[ MultiContentEntryText(pos=(20,10),size=(1440,45),flags=RT_HALIGN_LEFT,text=0) ],
@@ -242,7 +242,7 @@
 	<panel name="TemplateWizard"/>
 	<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,130" size="1460,200" transparent="1"/>
 	<eLabel text="Progress:" font="RegularBold;34" backgroundColor="OE_Background" position="445,335" size="215,45" transparent="1"/>
-	<eLabel backgroundColor="white" name="" position="445,385" size="1460,2" zPosition="-9"/>
+	<eLabel backgroundColor="#0000fafa" name="" position="445,385" size="1460,2" zPosition="-9"/>
 	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,390" size="1460,655" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1">
 	    <convert type="TemplatedMultiContent">
 				{"template":[ MultiContentEntryText(pos=(20,2),size=(1440,45),flags=RT_HALIGN_LEFT,text=0) ],
@@ -933,7 +933,7 @@
 				"fonts":[gFont("RegularBold",30) ],"itemHeight":50}
 	    </convert>
 	</widget>
-	<eLabel backgroundColor="white" name="" position="445,385" size="1460,2" zPosition="-9"/>
+	<eLabel backgroundColor="#0000fafa" name="" position="445,385" size="1460,2" zPosition="-9"/>
 	<widget name="config" font="RegularBold;26" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="445,390" size="1460,215" zPosition="1"/>
 	<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="445,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
 	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="350,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
@@ -4188,7 +4188,7 @@
   <screen name="ClientModeBoxMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="160,900" size="64,43"/>
-	<eLabel backgroundColor="blue_light" name="" position="410,865" size="1490,2" zPosition="-9"/>
+	<eLabel backgroundColor="#0000fafa" name="" position="410,865" size="1490,2" zPosition="-9"/>
 	<widget name="config" itemHeight="60" position="410,150" size="1400,710" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
 	<widget source="text" render="Label" position="410,860" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="blue_light" zPosition="2" size="1490,90" transparent="1" valign="center" halign="center"/>
 	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="1835,160" zPosition="1" size="64,43" transparent="1" alphatest="blend">
