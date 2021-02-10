@@ -106,7 +106,7 @@
 	<alias name="FileListMulti" font="RegularBold" size="30" height="50"/>
 	<alias name="PluginBrowser0" font="RegularBold" size="26" height="80"/>
 	<alias name="PluginBrowser1" font="RegularLight" size="24"/>
-	<alias name="ServiceInfo" font="RegularBold" size="30" height="45"/>
+	<alias name="ServiceInfo" font="RegularBold" size="25" height="45"/>
 	<alias name="SelectionList" font="RegularBold" size="30" height="50"/>
 	<alias name="PiconManagerList" font="Regular" size="28" height="45"/>
 	<alias name="VirtualKeyBoard" font="Regular" size="42" height="68"/>
