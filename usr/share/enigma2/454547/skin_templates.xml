@@ -199,12 +199,12 @@
 	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="970,950" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="1260,950" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="1550,950" size="40,40"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="725,935" size="240,70" name="key_red" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="1015,935" size="240,70" name="key_green" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="1305,935" size="240,70" render="Label" source="key_yellow" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="1595,935" size="240,70" render="Label" source="key_blue" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="1305,935" size="240,70" name="key_yellow" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="1595,935" size="240,70" name="key_blue" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" position="725,935" size="240,70" name="key_red" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" position="1015,935" size="240,70" name="key_green" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" position="1305,935" size="240,70" render="Label" source="key_yellow" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" position="1595,935" size="240,70" render="Label" source="key_blue" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" position="1305,935" size="240,70" name="key_yellow" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" position="1595,935" size="240,70" name="key_blue" halign="left" valign="center" transparent="1" zPosition="1"/>
   </screen>
 	<!-- TEMPLATE MULTIEPG AND EVENTVIEW -->
   <screen name="MultiEPGEventView">
@@ -225,14 +225,14 @@
 	<ePixmap pixmap="buttons/key_yellow.png" position="1100,950" size="40,40" alphatest="blend" />
 	<ePixmap pixmap="buttons/key_blue.png" position="1450,950" size="40,40" alphatest="blend" />
 	<!-- Keys Sources -->
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="425,935" size="300,70" source="key_red" render="Label" objectTypes="key_red,StaticText" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="755,935" size="300,70" source="key_green" render="Label" objectTypes="key_green,StaticText" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="1145,935" size="300,70" source="key_yellow" render="Label" objectTypes="key_yellow,StaticText" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="1495,935" size="300,70" source="key_blue" render="Label" halign="left" objectTypes="key_blue,StaticText" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="425,935" size="300,70" name="key_red" objectTypes="key_red,Label,Button" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="755,935" size="300,70" name="key_green" objectTypes="key_green,Label,Button" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="1145,935" size="300,70" name="key_yellow" objectTypes="key_yellow,Label,Button" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="1495,935" size="300,70" name="key_blue" objectTypes="key_blue,Label,Button" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" position="425,935" size="300,70" source="key_red" render="Label" objectTypes="key_red,StaticText" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" position="755,935" size="300,70" source="key_green" render="Label" objectTypes="key_green,StaticText" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" position="1145,935" size="300,70" source="key_yellow" render="Label" objectTypes="key_yellow,StaticText" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" position="1495,935" size="300,70" source="key_blue" render="Label" halign="left" objectTypes="key_blue,StaticText" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" position="425,935" size="300,70" name="key_red" objectTypes="key_red,Label,Button" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" position="755,935" size="300,70" name="key_green" objectTypes="key_green,Label,Button" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" position="1145,935" size="300,70" name="key_yellow" objectTypes="key_yellow,Label,Button" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" position="1495,935" size="300,70" name="key_blue" objectTypes="key_blue,Label,Button" halign="left" valign="center" transparent="1" zPosition="1"/>
   </screen>
 	<!-- TEMPLATE GRAPHICAL EPG -->
   <screen name="TemplateGraphicalEPG">
@@ -265,10 +265,10 @@
 	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="570,950" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="975,950" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="1390,950" size="40,40"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" halign="left" position="225,935" size="300,70" name="key_red" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" halign="left" position="615,935" size="300,70" name="key_green" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" halign="left" position="1020,935" size="300,70" name="key_yellow" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" halign="left" position="1435,935" size="400,70" name="key_blue" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" halign="left" position="225,935" size="300,70" name="key_red" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" halign="left" position="615,935" size="300,70" name="key_green" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" halign="left" position="1020,935" size="300,70" name="key_yellow" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" halign="left" position="1435,935" size="400,70" name="key_blue" transparent="1" zPosition="1"/>
 	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="55,85" size="75,75" transparent="1" zPosition="1"/>
   </screen>
 	<!-- STANDARD SCREEN -->
@@ -367,6 +367,10 @@
 	<widget name="arrowup2" conditional="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="stepslider" conditional="stepslider" borderWidth="1" position="665,340" size="450,35" foregroundColor="blue_light" zPosition="15" transparent="1"/>
 	<widget name="step" conditional="step" borderWidth="1" position="445,345" size="450,40" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" zPosition="15" transparent="1"/>
+	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="445,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="350,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
+	    <convert type="ConditionalShowHide"/>
+	</widget>
   </screen>
 	 <!-- MESSAGEBOX TEMPLATE-->
   <screen name="MessageBoxTemplate">

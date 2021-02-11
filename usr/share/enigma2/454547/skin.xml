@@ -97,7 +97,7 @@
 	<font filename="/usr/share/fonts/OpenSans-Regular.ttf" name="Regular" scale="95"/>
 	<font filename="/usr/share/fonts/OpenSans-Regular.ttf" name="RegularLight" scale="95"/>
 	<font filename="/usr/share/fonts/OpenSans-Regular.ttf" name="EL_Standard" scale="100"/>
-	<font filename="/usr/share/fonts/segoe-ui-bold.ttf" name="RegularBold" scale="100"/>
+	<font filename="/usr/share/fonts/segoe-ui-bold.ttf" name="FHD" scale="100"/>
 	<font filename="/usr/share/fonts/DejaVuSans-Bold.ttf" name="RegularBold" scale="100"/>
 	<alias name="ChoiceList" font="RegularBold" size="25" height="45"/>
 	<alias name="Body" font="RegularBold" size="30" height="50"/>
@@ -164,6 +164,9 @@
 	<color color="OE_Foreground" name="WindowTitleForeground"/>
   </windowstyle>
   <parameters>
+	<parameter name="AllowUserDatesAndTimes" value="1, 1"/>
+	<parameter name="AllowUseOnlyIcon" value="1, 1"/>
+	<parameter name="AllowUserDatesAndTimesDisplay" value="1, 1"/>
 	<parameter name="AboutHddSplit" value="1, 1"/>
 	<parameter name="ChoicelistDash" value="0, 3, 1000, 50"/>
 	<parameter name="ChoicelistName" value="85, 3, 1000, 50"/>
@@ -209,7 +212,7 @@
   <screen name="LanguageWizard" title="Language Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateWizard"/>
 	<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,170" size="1420,90" transparent="1"/>
-	<eLabel backgroundColor="blue_light" name="" position="445,275" size="1460,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="445,275" size="1460,2" zPosition="-8"/>
 	<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="445,280" size="1460,715" transparent="1">
 	    <convert type="TemplatedMultiContent">
 				{"template":[
@@ -224,7 +227,7 @@
   <screen name="VideoWizard" title="Video Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateWizard"/>
 	<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,160" size="1460,300" transparent="1"/>
-	<eLabel backgroundColor="#0000fafa" name="" position="445,470" size="1460,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="445,470" size="1460,2" zPosition="-9"/>
 	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,480" size="1460,525" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1">
 	    <convert type="TemplatedMultiContent">
 				{"template":[ MultiContentEntryText(pos=(20,10),size=(1440,45),flags=RT_HALIGN_LEFT,text=0) ],
@@ -241,8 +244,8 @@
   <screen name="StartWizard" title="Start Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateWizard"/>
 	<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,130" size="1460,200" transparent="1"/>
-	<eLabel text="Progress:" font="RegularBold;34" backgroundColor="OE_Background" position="445,335" size="215,45" transparent="1"/>
 	<eLabel backgroundColor="#0000fafa" name="" position="445,385" size="1460,2" zPosition="-9"/>
+	<eLabel text="Progress:" font="RegularBold;34" backgroundColor="OE_Background" position="445,335" size="215,45" transparent="1"/>
 	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,390" size="1460,655" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1">
 	    <convert type="TemplatedMultiContent">
 				{"template":[ MultiContentEntryText(pos=(20,2),size=(1440,45),flags=RT_HALIGN_LEFT,text=0) ],
@@ -254,7 +257,6 @@
 	<!-- INSTALL WIZARD -->
   <screen name="InstallWizard" backgroundColor="transparent" title="Welcome..." position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateWizard"/>
-	<panel name="MandatoryWidgets"/>
 	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="445,130" size="1460,200" transparent="1"/>
   </screen>
 	<!-- OPKG UPDATER -->
@@ -323,13 +325,13 @@
 	<panel name="MainMenu"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_leftright.png" position="975,924" size="64,43"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="290,926" size="1107,39" zPosition="-10"/>
-	<eLabel text="[move mode]" position="1025,925" size="355,39" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold;24" halign="center" valign="center"/>
+	<eLabel text="[move mode]" position="1025,927" size="355,39" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold;24" halign="center" valign="center"/>
 	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_red.png" position="20,925" size="40,40"/>
 	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_green.png" position="260,925" size="40,40"/>
 	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_yellow.png" position="670,925" size="40,40"/>
 	<widget source="key_red" render="Label" font="RegularBold;24" backgroundColor="OE_NewBg2" position="60,925" size="140,39" transparent="1" zPosition="1" halign="left" valign="center"/>
-	<widget source="key_green" render="Label" font="RegularBold;24" backgroundColor="OE_NewBg2" position="300,925" size="370,39" transparent="1" zPosition="1" halign="left" valign="center"/>
-	<widget source="key_yellow" render="Label" font="RegularBold;24" backgroundColor="OE_NewBg2" position="710,925" size="240,39" transparent="1" zPosition="1" halign="left" valign="center"/>
+	<widget source="key_green" render="Label" font="RegularBold;24" backgroundColor="OE_NewBg2" position="300,927" size="370,39" transparent="1" zPosition="1" halign="left" valign="center"/>
+	<widget source="key_yellow" render="Label" font="RegularBold;24" backgroundColor="OE_NewBg2" position="710,927" size="240,39" transparent="1" zPosition="1" halign="left" valign="center"/>
   </screen>
 	<!-- CHOICEBOX -->
   <screen name="ChoiceBox" position="fill" flags="wfNoBorder">
@@ -848,16 +850,16 @@
 	<ePixmap alphatest="blend" pixmap="buttons/key_leftright.png" position="252,960" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_downup.png" position="168,960" size="64,43"/>
 	<!-- Button -->
-	<widget alphatest="blend" pixmap="buttons/key_red.png" position="90,160" render="Pixmap" size="40,40" source="key_red" zPosition="1">
+	<widget alphatest="blend" pixmap="buttons/key_red.png" position="90,155" render="Pixmap" size="40,40" source="key_red" zPosition="1">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="blend" pixmap="buttons/key_green.png" position="90,210" size="40,40" render="Pixmap" source="key_green" zPosition="1">
+	<widget alphatest="blend" pixmap="buttons/key_green.png" position="90,205" size="40,40" render="Pixmap" source="key_green" zPosition="1">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="blend" pixmap="buttons/key_yellow.png" position="90,260" size="40,40" render="Pixmap" source="key_yellow" zPosition="1">
+	<widget alphatest="blend" pixmap="buttons/key_yellow.png" position="90,255" size="40,40" render="Pixmap" source="key_yellow" zPosition="1">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="blend" pixmap="buttons/key_blue.png" position="90,310" size="40,40" render="Pixmap" source="key_blue" zPosition="1">
+	<widget alphatest="blend" pixmap="buttons/key_blue.png" position="90,305" size="40,40" render="Pixmap" source="key_blue" zPosition="1">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
 	<!-- Clock -->
@@ -927,18 +929,14 @@
   <screen name="AutoTimerWizard" title="Welcome..." backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateWizard"/>
 	<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,130" size="1460,200" transparent="1"/>
+	<eLabel backgroundColor="#0000fafa" name="" position="445,385" size="1460,2" zPosition="-9"/>
 	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,390" scrollbarMode="showOnDemand" size="1460,500" transparent="1">
 	    <convert type="TemplatedMultiContent">
 				{"template":[ MultiContentEntryText(pos=(20,5),size=(1440,45),flags=RT_HALIGN_LEFT,text=0) ],
 				"fonts":[gFont("RegularBold",30) ],"itemHeight":50}
 	    </convert>
 	</widget>
-	<eLabel backgroundColor="#0000fafa" name="" position="445,385" size="1460,2" zPosition="-9"/>
 	<widget name="config" font="RegularBold;26" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="445,390" size="1460,215" zPosition="1"/>
-	<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="445,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
-	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="350,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
-	    <convert type="ConditionalShowHide"/>
-	</widget>
   </screen>
   <screen name="AutoResSetupMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -3586,11 +3584,11 @@
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
 	<widget name="lab1" position="1395,495" size="230,50" font="RegularBold;25" valign="center" backgroundColor="OE_NewBg2" transparent="1"/>
-	<widget name="labdisabled" position="1630,495" size="280,50" font="RegularBold;25" valign="center" halign="center" backgroundColor="red" zPosition="1"/>
-	<widget name="labactive" position="1630,495" size="280,50" zPosition="1" font="RegularBold;25" valign="center" halign="center" backgroundColor="green"/>
+	<widget name="labdisabled" position="1630,495" size="260,50" font="RegularBold;25" valign="center" halign="center" backgroundColor="red" zPosition="1"/>
+	<widget name="labactive" position="1630,495" size="260,50" zPosition="1" font="RegularBold;25" valign="center" halign="center" backgroundColor="green"/>
 	<widget name="lab2" position="1395,595" size="230,50" font="RegularBold;25" backgroundColor="OE_Background" valign="center" transparent="1"/>
-	<widget name="labstop" position="1630,595" size="280,50" font="RegularBold;25" valign="center" halign="center" backgroundColor="red"/>
-	<widget name="labrun" position="1630,595" size="280,50" zPosition="1" font="RegularBold;25" valign="center" halign="center" backgroundColor="green"/>
+	<widget name="labstop" position="1630,595" size="260,50" font="RegularBold;25" valign="center" halign="center" backgroundColor="red"/>
+	<widget name="labrun" position="1630,595" size="260,50" zPosition="1" font="RegularBold;25" valign="center" halign="center" backgroundColor="green"/>
 	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_NewBg2" position="110,140" size="1255,800" transparent="1">
 	    <convert type="TemplatedMultiContent">
 		{"template": [ MultiContentEntryText(pos = (20, 7), size = (1230, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1), # index 1 is the interfacename
@@ -4279,7 +4277,7 @@
   <screen name="filtersServicesSelection" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="list" position="110,140" size="1255,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="50" serviceItemHeight="50" serviceNumberFont="RegularBold;32" serviceNameFont="RegularBold;32" serviceInfoFont="RegularBold;27" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
+	<widget name="list" position="110,140" size="1255,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="50" serviceItemHeight="50" serviceNumberFont="RegularBold;30" serviceNameFont="RegularBold;30" serviceInfoFont="RegularBold;27" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
   </screen>
 	<!-- PERSIAN PALACE AND PICTURE PLAYER -->
   <screen name="TextOut" position="fill" backgroundColor="transparent" flags="wfNoBorder">
