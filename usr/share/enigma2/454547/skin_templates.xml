@@ -54,7 +54,7 @@
 	<widget source="menu" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="295,275" size="1095,650" transparent="1">
 		<convert type="TemplatedMultiContent">
 				  {"template": [ MultiContentEntryText(pos = (15, 12), size = (1095, 60), flags = RT_HALIGN_LEFT, text = 0) ],
-				  "fonts": [gFont("RegularBold", 33)],
+				  "fonts": [gFont("RegularBold", 34)],
 				  "itemHeight": 64
 				  }
 		</convert>
@@ -62,12 +62,12 @@
   </screen>
 	<!-- TITLES -->
   <screen name="TitleStanDardScreen">
-	<widget source="Title" render="Label" font="RegularBold;29" backgroundColor="OE_Background" position="95,58" size="1290,80" halign="center" valign="top" transparent="1"/>
+	<widget source="Title" render="Label" font="RegularBold;29" backgroundColor="OE_Background" position="95,58" size="1290,70" halign="center" valign="top" transparent="1"/>
 	<widget source="ScreenPath" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="blue_light" position="95,0" size="1290,70" halign="center" valign="top" transparent="1"/>
   </screen>
   <screen name="TitleInformation">
-	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="405,40" size="1490,90" halign="center" valign="top" transparent="1"/>
-	<widget source="ScreenPath" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="blue_light" position="405,10" size="1490,35" halign="center" valign="top" transparent="1"/>
+	<widget source="Title" render="Label" font="RegularBold;28" backgroundColor="OE_Background" position="405,62" size="1490,70" halign="center" valign="top" transparent="1"/>
+	<widget source="ScreenPath" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="blue_light" position="405,6" size="1490,56" halign="center" valign="top" transparent="1"/>
   </screen>
   <screen name="TitleSlim">
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="85,0" size="955,90" halign="center" valign="center" transparent="1"/>

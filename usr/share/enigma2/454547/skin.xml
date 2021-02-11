@@ -98,7 +98,7 @@
 	<font filename="/usr/share/fonts/OpenSans-Regular.ttf" name="RegularLight" scale="95"/>
 	<font filename="/usr/share/fonts/OpenSans-Regular.ttf" name="EL_Standard" scale="100"/>
 	<font filename="/usr/share/fonts/segoe-ui-bold.ttf" name="FHD" scale="100"/>
-	<font filename="/usr/share/fonts/DejaVuSans-Bold.ttf" name="RegularBold" scale="100"/>
+	<font filename="/usr/share/fonts/DejaVuSansCondensed-Bold.ttf" name="RegularBold" scale="100"/>
 	<alias name="ChoiceList" font="RegularBold" size="25" height="45"/>
 	<alias name="Body" font="RegularBold" size="30" height="50"/>
 	<alias name="TextNormal" font="RegularBold" size="30" height="50"/>
@@ -318,7 +318,7 @@
   <screen name="Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="Setup">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="110,140" size="1255,800" transparent="1"/>
+	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="110,140" size="1255,800" transparent="1"/>
   </screen>
 	<!-- MENU SORT -->
   <screen name="MenuSort" position="fill" backgroundColor="transparent" flags="wfNoBorder">
@@ -370,7 +370,7 @@
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold;30" position="435,933" render="Label" size="130,40" source="session.Event_Now" transparent="1">
+	<widget backgroundColor="OE_Background" font="RegularBold;30" position="430,933" render="Label" size="130,40" source="session.Event_Now" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:- %H:%M</convert>
 	</widget>
@@ -385,7 +385,7 @@
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold;30" position="435,988" render="Label" size="130,40" source="session.Event_Next" transparent="1">
+	<widget backgroundColor="OE_Background" font="RegularBold;30" position="430,988" render="Label" size="130,40" source="session.Event_Next" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:- %H:%M</convert>
 	</widget>
@@ -541,7 +541,7 @@
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget backgroundColor="OE_ListBackground" foregroundColor="green_light" font="RegularBold;28" position="750,188" render="Label" size="100,40" source="session.Event_Now" transparent="1">
+	<widget backgroundColor="OE_ListBackground" foregroundColor="green_light" font="RegularBold;28" position="745,188" render="Label" size="100,40" source="session.Event_Now" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:-%H:%M</convert>
 	</widget>
@@ -559,7 +559,7 @@
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget backgroundColor="OE_ListBackground" foregroundColor="green_light" font="RegularBold;28" position="750,638" render="Label" size="100,40" source="session.Event_Now" transparent="1">
+	<widget backgroundColor="OE_ListBackground" foregroundColor="green_light" font="RegularBold;28" position="745,638" render="Label" size="100,40" source="session.Event_Now" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:-%H:%M</convert>
 	</widget>
@@ -1003,14 +1003,14 @@
 	<widget backgroundColor="OE_NewBg" font="RegularBold;28" position="390,65" zPosition="3" render="Label" size="140,30" source="global.CurrentTime" transparent="1" foregroundColor="white">
 	    <convert type="ClockToText">Mixed</convert>
 	</widget>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" position="270,130" zPosition="3" render="Label" size="390,30" source="global.CurrentTime" transparent="1">
+	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" position="260,130" zPosition="3" render="Label" size="400,30" source="global.CurrentTime" transparent="1">
 	    <convert type="ClockToText">ShortDate</convert>
 	</widget>
 	<widget backgroundColor="OE_NewBg2" font="RegularBold;28" position="320,185" render="Label" size="90,30" source="ServiceEvent" transparent="1">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;28" position="410,185" render="Label" size="105,30" source="ServiceEvent" transparent="1">
+	<widget backgroundColor="OE_NewBg2" font="RegularBold;28" position="405,185" render="Label" size="105,30" source="ServiceEvent" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:-%H:%M</convert>
 	</widget>
@@ -1442,7 +1442,7 @@
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget source="Event" render="Label" font="RegularBold;28" position="199,160" size="100,45" zPosition="2" backgroundColor="OE_NewBg2" foregroundColor="OE_Foreground" transparent="1">
+	<widget source="Event" render="Label" font="RegularBold;28" position="194,160" size="100,45" zPosition="2" backgroundColor="OE_NewBg2" foregroundColor="OE_Foreground" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:-%H:%M</convert>
 	</widget>
@@ -2813,7 +2813,7 @@
 	<eLabel text="TSID:" position="115,225" size="100,35" backgroundColor="OE_Background" zPosition="2" font="RegularBold;26" transparent="1"/>
 	<widget source="tsid" render="Label" position="230,225" size="150,35" font="RegularBold;26" foregroundColor="green_light" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
 	<eLabel text="ONID:" position="435,225" size="100,35" backgroundColor="OE_Background" zPosition="2" font="RegularBold;26" transparent="1"/>
-	<widget source="onid" render="Label" position="545,225" size="150,35" font="RegularBold;26" foregroundColor="green_light" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
+	<widget source="onid" render="Label" position="540,225" size="150,35" font="RegularBold;26" foregroundColor="green_light" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
 	<eLabel text="Orb Pos:" position="725,225" size="130,35" backgroundColor="OE_Background" zPosition="2" font="RegularBold;26" transparent="1"/>
 	<widget source="pos" render="Label" position="865,225" size="150,35" font="RegularBold;26" foregroundColor="green_light" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
 	<eLabel name="lock" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" position="1045,220" size="230,45" halign="right" text="Lock:" transparent="1"/>
