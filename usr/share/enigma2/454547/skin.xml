@@ -353,7 +353,7 @@
 	<eLabel backgroundColor="blue_light" name="InfoBar" position="315,775" size="2,305" zPosition="-11"/>
 	<eLabel backgroundColor="blue_light" name="InfoBar" position="28,1078" size="289,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="session.CurrentService" render="ChannelNumber" backgroundColor="OE_Background" foregroundColor="OE_Foreground" font="RegularBold;30" position="320,854" size="110,55" transparent="1" halign="right" valign="center" zPosition="1"/>
+	<widget source="session.CurrentService" render="ChannelNumber" backgroundColor="OE_Background" foregroundColor="OE_Foreground" font="RegularBold;30" position="325,870" halign="center" size="110,40" transparent="1" zPosition="1"/>
 	<eLabel backgroundColor="OE_Background" font="Regular;52" halign="center" position="430,849" size="30,60" text="l" transparent="1"/>
 	<widget source="session.CurrentService" render="Label" position="458,850" size="750,35" font="RegularBold;27" noWrap="1" backgroundColor="background" transparent="1" halign="left" valign="center" foregroundColor="white">
 	    <convert type="ServiceName">Name</convert>
@@ -364,13 +364,13 @@
 	<widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" font="RegularBold;32" halign="left" noWrap="1" position="575,930" size="1100,64" transparent="1">
 	    <convert type="EventName">Name</convert>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold;32" position="335,930" render="Label" size="105,40" source="session.Event_Now" transparent="1">
+	<widget backgroundColor="OE_Background" font="RegularBold;30" position="335,933" render="Label" size="105,40" source="session.Event_Now" transparent="1">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold;32" position="435,930" render="Label" size="130,40" source="session.Event_Now" transparent="1">
+	<widget backgroundColor="OE_Background" font="RegularBold;30" position="435,933" render="Label" size="130,40" source="session.Event_Now" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
-	    <convert type="ClockToText">Format:-%H:%M</convert>
+	    <convert type="ClockToText">Format:- %H:%M</convert>
 	</widget>
 	<widget backgroundColor="OE_Background" font="RegularBold;32" halign="right" position="1681,930" render="Label" size="165,55" source="session.Event_Now" transparent="1">
 	    <convert type="EventTime">Remaining</convert>
@@ -379,13 +379,13 @@
 	<widget source="session.Event_Now" render="Progress" backgroundColor="OE_NewBg" pixmap="colors/00A4C400.png" position="336,975" size="1510,4" transparent="0" zPosition="7">
 	    <convert type="EventTime">Progress</convert>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold;32" position="335,985" render="Label" size="105,40" source="session.Event_Next" transparent="1" valign="top">
+	<widget backgroundColor="OE_Background" font="RegularBold;30" position="335,988" render="Label" size="105,40" source="session.Event_Next" transparent="1" valign="top">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold;32" position="435,985" render="Label" size="130,40" source="session.Event_Next" transparent="1">
+	<widget backgroundColor="OE_Background" font="RegularBold;30" position="435,988" render="Label" size="130,40" source="session.Event_Next" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
-	    <convert type="ClockToText">Format:-%H:%M</convert>
+	    <convert type="ClockToText">Format:- %H:%M</convert>
 	</widget>
 	<widget source="session.Event_Next" font="RegularBold;32" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" halign="left" position="575,985" size="1100,48" transparent="1" valign="top">
 	    <convert type="EventName">Name</convert>
@@ -648,10 +648,11 @@
 	<widget source="session.CurrentService" render="PicCript" path="454547/cript" position="470,965" size="98,31" alphatest="blend" zPosition="3"/>
 	<panel name="Clock"/>
 	 <!-- MSNWeather -->
+	<ePixmap pixmap="/usr/share/enigma2/454547/WeatherIcon/wind.png" position="52,630" size="60,60" alphatest="blend"/>
 	<widget alphatest="blend" render="MSNWeatherPixmap" position="55,700" size="128,128" source="session.MSNWeather" transparent="1" zPosition="8">
 	    <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/454547/WeatherIcon/,png</convert>
 	</widget>
-	<widget source="session.MSNWeather" render="Label" position="145,620" size="220,70" font="RegularBold;24" halign="center" valign="center" backgroundColor="OE_NewBg" transparent="1" zPosition="2">
+	<widget source="session.MSNWeather" render="Label" position="120,620" size="330,70" font="RegularBold;24" halign="center" valign="center" backgroundColor="OE_NewBg" transparent="1" zPosition="2">
 	    <convert type="MSNWeather">winddisplay</convert>
 	</widget>
 	<widget source="session.MSNWeather" render="Label" position="220,695" size="220,35" font="RegularBold;24" halign="left" backgroundColor="OE_NewBg" transparent="1" zPosition="2">
@@ -663,12 +664,11 @@
 	<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="25,830" size="440,40" source="session.MSNWeather" zPosition="3" halign="center" valign="center" transparent="1" foregroundColor="yellow">
 	    <convert type="MSNWeather">city</convert>
 	</widget>
-	<eLabel text="Humidity :" position="115,905" size="175,35" zPosition="5" font="RegularBold;28" transparent="1"/>
+	<eLabel text="Humidity:" position="85,905" size="205,35" zPosition="5" font="RegularBold;28" transparent="1"/>
 	<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="295,905" size="80,50" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="blue_light">
 	    <convert type="MSNWeather">humidity</convert>
 	</widget>
-	<eLabel text="%" position="380,905" size="30,50" zPosition="5" halign="center" font="RegularBold;28" transparent="1"/>
-	<ePixmap pixmap="/usr/share/enigma2/454547/WeatherIcon/wind.png" position="52,630" size="60,60" alphatest="blend"/>
+	<eLabel text="%" position="375,905" size="30,50" zPosition="5" halign="center" font="RegularBold;28" transparent="1"/>
   </screen>
 	<!-- MAIN MENU INFORMATION (NEW) -->
 	<!-- INFO COMMON -->
@@ -1012,11 +1012,11 @@
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;28" position="410,185" render="Label" size="100,30" source="ServiceEvent" transparent="1">
+	<widget backgroundColor="OE_NewBg2" font="RegularBold;28" position="410,185" render="Label" size="105,30" source="ServiceEvent" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:-%H:%M</convert>
 	</widget>
-	<widget source="Event" render="Label" backgroundColor="OE_NewBg2" font="RegularBold;28" foregroundColor="blue_light" position="515,185" size="115,30" transparent="1">
+	<widget source="Event" render="Label" backgroundColor="OE_NewBg2" font="RegularBold;28" foregroundColor="blue_light" position="520,185" size="110,30" transparent="1">
 	    <convert type="EventTime">Remaining</convert>
 	    <convert type="RemainingToText">NoSeconds</convert>
 	</widget>
@@ -3562,7 +3562,7 @@
 	<panel name="ScreenOpenVision"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,155" zPosition="10" size="1490,670" transparent="1"/>
 	<eLabel backgroundColor="blue_light" position="410,830" size="1490,2" zPosition="2"/>
-	<widget source="description" render="Label" font="RegularBold;30" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,848" size="1490,85" transparent="1" halign="center" valign="center"/>
+	<widget source="description" render="Label" font="RegularBold;28" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,848" size="1490,85" transparent="1" halign="center" valign="center"/>
   </screen>
 	<!-- FLASHIMAGE -->
   <screen name="FlashImage" position="fill" zPosition="10" flags="wfNoBorder">
@@ -3570,7 +3570,7 @@
 	<widget name="header" position="410,155" size="1490,85" zPosition="10" font="RegularBold;30" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="progress" backgroundColor="OE_Background" position="410,270" size="1490,85" zPosition="10" transparent="1"/>
 	<eLabel backgroundColor="blue_light" position="410,830" size="1490,2" zPosition="2"/>
-	<widget name="info" font="RegularBold;30" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,848" size="1490,85" transparent="1" zPosition="10" halign="center" valign="center"/>
+	<widget name="info" font="RegularBold;28" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,848" size="1490,85" transparent="1" zPosition="10" halign="center" valign="center"/>
   </screen>
 	<!-- AUTO BACKUP -->
   <screen name="Config" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -3773,15 +3773,15 @@
   <screen name="DevicesMountPanel" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="lab1" position="110,140" size="300,50" font="RegularBold;28" valign="center" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
+	<widget name="lab1" position="110,140" size="1255,50" font="RegularBold;28" valign="center" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
 	<widget name="key_menu" position="110,915" size="400,50" font="RegularBold;26" valign="center" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="18,925" size="64,43" alphatest="blend"/>
 	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="110,140" size="1255,720" transparent="1">
 	    <convert type="TemplatedMultiContent">
 		{"template": [ MultiContentEntryPixmapAlphaBlend(pos = (5, 0), size = (110, 110), png = 2), # index 3 is the interface pixmap
-		MultiContentEntryText(pos = (90, 10), size = (1000, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1), # index 1 is the interfacename
+		MultiContentEntryText(pos = (90, 10), size = (1000, 70), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1), # index 1 is the interfacename
 		],
-		"fonts": [gFont("RegularBold", 30),gFont("Regular", 28)],
+		"fonts": [gFont("RegularBold", 25),gFont("Regular", 28)],
 		"itemHeight": 80
 		}
 	    </convert>
@@ -4130,7 +4130,7 @@
 	<!-- SCRIPT RUNNER-->
   <screen name="VISIONScriptRunner" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
-	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,140" zPosition="10" size="1490,800" transparent="1"/>
+	<widget name="list" font="RegularBold;25" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,140" zPosition="10" size="1490,800" transparent="1"/>
 	<applet type="onLayoutFinish">
 	self[&quot;list&quot;].instance.setItemHeight(50)
 	</applet>
@@ -4402,8 +4402,8 @@
 	<widget source="menu" render="Listbox" position="110,140" size="1255,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
 	    <convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (0, 5), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (30, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x0000baff, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (0, 3), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (35, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x0000baff, color_sel = 0x00ffffff),
 					MultiContentEntryText(pos = (430, 0), size = (845, 80), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffffff, color_sel = 0x00ffc000),
 					MultiContentEntryText(pos = (30, 35), size = (260, 30), font = 2, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x0000ffff),
 					],
@@ -4426,8 +4426,8 @@
 	<widget source="menu" render="Listbox" position="110,140" size="1255,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
 	    <convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (0, 5), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (30, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00999999, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (0, 3), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (35, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00999999, color_sel = 0x00ffffff),
 					MultiContentEntryText(pos = (435, 0), size = (840, 60), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffffff, color_sel = 0x00ffc000),
 					MultiContentEntryProgress(pos = (30, 40), size = (200, 15), percent = -5, borderWidth = 1, foreColor = 0x0056c856, foreColorSelected = 0x0000fafa),
 					MultiContentEntryText(pos = (240, 33), size = (50, 30), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x009999ff, color_sel = 0x00ffffff),
@@ -4451,8 +4451,8 @@
 	<widget source="menu" render="Listbox" position="110,140" size="1255,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
 	    <convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (80, 5), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (110, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x0000baff, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (80, 3), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (115, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x0000baff, color_sel = 0x00ffffff),
 					MultiContentEntryText(pos = (490, 0), size = (785, 80), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00a4c400, color_sel = 0x00ffc000),
 					MultiContentEntryText(pos = (110, 35), size = (260, 25), font = 2, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x0000ffff),
 					MultiContentEntryPixmapAlphaBlend(pos=(0, 10), size=(80, 80), png=6)
@@ -4476,11 +4476,11 @@
 	<widget source="menu" render="Listbox" position="110,140" size="1255,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
 	    <convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (80, 3), size = (25, 40), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (80, 3), size = (30, 40), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (120, 5), size = (495, 40), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
 					MultiContentEntryText(pos = (620, 5), size = (655, 65), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00a4c400, color_sel = 0x00ffffff),
 					MultiContentEntryProgress(pos = (120, 55), size = (280, 20), percent = -5, borderWidth = 1, foreColor = 0x000064c7, foreColorSelected = 0x0000fafa),
-					MultiContentEntryText(pos = (440, 48), size = (50, 30), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x009999ff, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (440, 53), size = (50, 30), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x009999ff, color_sel = 0x00ffffff),
 					MultiContentEntryPixmapAlphaBlend(pos=(0, 15), size=(80, 80), png=6)
 					],
 					"fonts": [gFont("RegularBold", 28), gFont("RegularBold", 26), gFont("RegularBold", 23), gFont("RegularBold", 22)],
@@ -4502,12 +4502,12 @@
 	<widget source="menu" render="Listbox" position="110,140" size="1255,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
 	    <convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (0, 5), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (30, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
-					MultiContentEntryText(pos = (430, 0), size = (845, 50), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x00a4c400),
-					MultiContentEntryText(pos = (5, 50), size = (1270, 395), font = 2, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (0, 3), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (35, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
+					MultiContentEntryText(pos = (440, 0), size = (835, 50), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x00a4c400),
+					MultiContentEntryText(pos = (5, 50), size = (1235, 395), font = 2, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x00ffffff),
 					],
-					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 19)],
+					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 21)],
 					"itemHeight": 445
 				}
 		</convert>
@@ -4526,13 +4526,13 @@
 	<widget source="menu" render="Listbox" position="110,140" size="1255,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
 	    <convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (0, 5), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (30, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
-					MultiContentEntryText(pos = (430, 0), size = (845, 55), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x00a4c400),
+					MultiContentEntryText(pos = (0, 3), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (35, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
+					MultiContentEntryText(pos = (440, 0), size = (835, 55), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x00a4c400),
 					MultiContentEntryText(pos = (30, 35), size = (400, 25), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x00ffc000),
-					MultiContentEntryText(pos = (30, 60), size = (1245, 395), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (30, 60), size = (1210, 395), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x00ffffff),
 					],
-					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 19), gFont("RegularBold", 18)],
+					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 20), gFont("RegularBold", 20)],
 					"itemHeight": 455
 				}
 		</convert>
@@ -4551,14 +4551,14 @@
 	<widget source="menu" render="Listbox" position="110,140" size="1255,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
 	    <convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (0, 5), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (0, 3), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (60, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
-					MultiContentEntryText(pos = (5, 60), size = (1270, 395), font = 3, flags = RT_HALIGN_LEFT| RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (5, 60), size = (1235, 395), font = 3, flags = RT_HALIGN_LEFT| RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x00ffffff),
 					MultiContentEntryText(pos = (355, 0), size = (920, 55), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x00a4c400),
 					MultiContentEntryProgress(pos = (60, 35), size = (200, 15), percent = -5, borderWidth = 1, foreColor = 0x000064c7, foreColorSelected = 0x0058bcff),
-					MultiContentEntryText(pos = (300, 28), size = (50, 20), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x0000ffff),
+					MultiContentEntryText(pos = (300, 30), size = (50, 20), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x0000ffff),
 					],
-					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 19), gFont("RegularBold", 18)],
+					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 20), gFont("RegularBold", 20)],
 					"itemHeight": 455
 				}
 		</convert>
@@ -4577,13 +4577,13 @@
 	<widget source="menu" render="Listbox" position="110,140" size="1255,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
 	    <convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (60, 5), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (90, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
+					MultiContentEntryText(pos = (60, 3), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (95, 0), size = (395, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
 					MultiContentEntryText(pos = (495, 0), size = (790, 95), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x00a4c400),
-					MultiContentEntryText(pos = (5, 100), size = (1270, 395), font = 2, flags = RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (5, 100), size = (1235, 395), font = 2, flags = RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x00ffffff),
 					MultiContentEntryPixmapAlphaBlend(pos=(0, 20), size=(80, 80), png=6)
 					],
-					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 19)],
+					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 20)],
 					"itemHeight": 495
 				}
 		</convert>
@@ -4602,11 +4602,11 @@
 	<widget source="menu" render="Listbox" position="110,140" size="1255,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
 	    <convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (60, 5), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (60, 3), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (100, 0), size = (400, 30), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
 					MultiContentEntryText(pos = (100, 35), size = (400, 30), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00ffffff, color_sel = 0x00ffffff),
 					MultiContentEntryText(pos = (505, 0), size = (770, 90), font = 1, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00a4c400, color_sel = 0x00ffc000),
-					MultiContentEntryText(pos = (5, 110), size = (1270, 405), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (5, 110), size = (1235, 405), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
 					MultiContentEntryPixmapAlphaBlend(pos=(0, 25), size=(80, 80), png=6)
 					],
 					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 22), gFont("RegularBold", 20)],
@@ -4621,22 +4621,22 @@
 	<ePixmap pixmap="buttons/key_help.png" position="18,940" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="18,990" size="64,43" alphatest="blend"/>
   </screen>
-	<!-- ********** PICON+EVENT+BAR PROGRESS+PERCENTAGE+DESCRIPTION********** -->
+	<!-- ********** PICON+EVENT+BAR PROGRESS+PERCENTAGE+DESCRIPTION ********** -->
   <screen name="HistoryZapDescriptionDurationBarPiconSkinFullHD" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
 	<widget source="menu" render="Listbox" position="110,140" size="1255,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
 	    <convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (57, 5), size = (25, 20), font = 2, color =0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (57, 3), size = (30, 20), font = 2, color =0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (90, 0), size = (450, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
 					MultiContentEntryText(pos = (545, 5), size = (730, 90), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00a4c400, color_sel = 0x00ffc000),
 					MultiContentEntryProgress(pos = (95, 35), size = (200, 15), percent = -5, borderWidth = 1, foreColor = 0x000064c7, foreColorSelected = 0x0058bcff),
-					MultiContentEntryText(pos = (310, 28), size = (50, 20), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x00ffffff),
-					MultiContentEntryText(pos = (5, 110), size = (1270, 400), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (310, 30), size = (50, 20), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (5, 110), size = (1235, 400), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
 					MultiContentEntryPixmapAlphaBlend(pos=(0, 25), size=(80, 80), png=6)
 					],
-					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 22), gFont("RegularBold", 18)],
+					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 22), gFont("RegularBold", 20)],
 					"itemHeight": 510
 				}
 		</convert>

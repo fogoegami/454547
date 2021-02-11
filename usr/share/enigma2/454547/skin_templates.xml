@@ -169,7 +169,7 @@
 	<eLabel backgroundColor="blue_light" name="" position="30,1008" size="1830,2" zPosition="0"/>
 	<eLabel backgroundColor="blue_light" name="" position="1858,72" size="2,938" zPosition="0"/>
   </screen>
-	<!-- TEMPLATE EPG SINGLE AND EPG SEARCH -->
+	<!-- EPG SINGLE EPG SEARCH EPG SIMILAR -->
   <screen name="TemplateEPGSelection">
 	<panel name="FrameClock"/>
 	<panel name="TemplateFrame"/>
@@ -188,7 +188,7 @@
 	<widget alphatest="blend" position="230,150" render="Picon" size="220,130" source="Service" transparent="1" zPosition="5">
 	    <convert type="ServiceName">Reference</convert>
 	</widget>
-	<widget source="Event" font="RegularBold;26" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="80,570" size="575,355" transparent="1" halign="left" valign="top" zPosition="2">
+	<widget source="Event" font="RegularBold;25" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="80,575" size="575,350" transparent="1" halign="left" valign="top" zPosition="2">
 	    <convert type="EventName">FullDescription</convert>
 	</widget>
 	<!-- Buttons -->
@@ -422,10 +422,10 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<eLabel position="1398,30" size="2,37" backgroundColor="#0000fafa" zPosition="16"/>
 	<eLabel position="1400,65" size="370,2" backgroundColor="#0000fafa" zPosition="16"/>
 	<eLabel position="1770,30" size="2,37" backgroundColor="#0000fafa" zPosition="16"/>
-	<widget source="progress_text" render="Label" position="1270,30" size="135,50" font="RegularBold;26" halign="left" backgroundColor="OE_NewBg2">
+	<widget source="progress_text" render="Label" position="1250,35" size="155,50" font="RegularBold;26" halign="left" backgroundColor="OE_NewBg2">
 	    <convert type="ProgressToText">InText</convert>
 	</widget>
-	<widget source="progress_text" render="Label" position="1780,30" size="140,50" font="RegularBold;26" halign="left" backgroundColor="OE_NewBg2">
+	<widget source="progress_text" render="Label" position="1780,35" size="140,50" font="RegularBold;26" halign="left" backgroundColor="OE_NewBg2">
 	    <convert type="ProgressToText">InPercent</convert>
 	</widget>
   </screen>
@@ -530,8 +530,8 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<widget source="session.Event_Now" render="xtraPoster" position="80,490" size="185,278" zPosition="2"/>
   </screen>
   <screen name="poster_secondinfobar">
-	<widget source="session.Event_Now" render="xtraPoster" position="470,190" size="185,278" zPosition="2"/>
-	<widget source="session.Event_Next" render="xtraPoster" position="470,635" size="185,278" zPosition="2"/>
+	<widget source="session.Event_Now" render="xtraPoster" position="470,195" size="185,278" zPosition="2"/>
+	<widget source="session.Event_Next" render="xtraPoster" position="470,645" size="185,278" zPosition="2"/>
   </screen>
   <screen name="poster_channelselection">
 	<widget source="ServiceEvent" render="xtraPoster" position="80,50" size="185,278" zPosition="2"/>
