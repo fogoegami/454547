@@ -1781,7 +1781,7 @@
 	<eLabel backgroundColor="blue_light" name="" position="10,20" size="1095,2" zPosition="-9" foregroundColor="white"/>
 	<eLabel backgroundColor="blue_light" name="" position="1105,20" size="2,395" zPosition="20" foregroundColor="white"/>
 	<eLabel backgroundColor="blue_light" name="" position="10,415" size="1097,2" zPosition="-15" foregroundColor="white"/>
-	<widget name="text" font="RegularBold;30" backgroundColor="OE_Background" position="110,25" size="990,295" valign="center" halign="center"/>
+	<widget name="text" font="RegularBold;28" backgroundColor="OE_Background" position="110,25" size="990,295" valign="center" halign="center"/>
 	<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="20,125" size="80,80" alphatest="blend"/>
 	<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="20,125" size="80,80" alphatest="blend"/>
 	<widget name="InfoPixmap" conditional="InfoPixmap" pixmap="icons/input_info.png" position="20,125" size="80,80" alphatest="blend"/>

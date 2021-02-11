@@ -374,7 +374,7 @@
   </screen>
 	 <!-- MESSAGEBOX TEMPLATE-->
   <screen name="MessageBoxTemplate">
-	<widget name="text" font="RegularBold;28" backgroundColor="OE_Background" position="190,25" size="1005,150" valign="center" halign="center"/>
+	<widget name="text" font="RegularBold;26" backgroundColor="OE_Background" position="190,25" size="1005,150" valign="center" halign="center"/>
 	<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="55,50" size="80,80" alphatest="blend"/>
 	<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="55,50" size="80,80" alphatest="blend"/>
 	<widget name="InfoPixmap" conditional="InfoPixmap" pixmap="icons/input_info.png" position="55,50" size="80,80" alphatest="blend"/>
