@@ -245,11 +245,11 @@
 	<widget backgroundColor="blue_light" borderWidth="0" pixmap="colors/00A4C400.png" position="160,160" render="Progress" size="950,6" source="Event" transparent="0" zPosition="1">
 	    <convert type="EventTime">Progress</convert>
 	</widget>
-	<widget source="Event" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="155,130" size="100,45" halign="center" transparent="1">
+	<widget source="Event" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="150,130" size="100,45" halign="center" transparent="1">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget source="Event" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="1015,130" size="100,45" halign="center" transparent="1">
+	<widget source="Event" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="1020,130" size="100,45" halign="center" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
