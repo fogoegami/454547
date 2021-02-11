@@ -761,7 +761,7 @@
 	<!-- TROUBLESHOOT -->
   <screen name="Troubleshoot" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="TemplateInformation"/>
-	<widget name="AboutScrollLabel" font="Console;25" backgroundColor="OE_Background" position="410,135" size="1490,810" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
+	<widget name="AboutScrollLabel" font="Console;25" backgroundColor="OE_Background" position="410,140" size="1490,805" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_leftright.png" position="210,905" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_downup.png" position="125,905" size="64,43"/>
   </screen>
@@ -2795,21 +2795,21 @@
 	<panel name="StanDardScreen"/>
 	<panel name="TemplateNoPip"/>
 	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="110,265" size="1255,705" transparent="1"/>
-	<eLabel backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="right" name="snr" position="65,145" size="120,45" text="SNR:" transparent="1"/>
+	<eLabel backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="right" name="snr" position="65,144" size="120,45" text="SNR:" transparent="1"/>
 	<widget borderColor="grey" borderWidth="2" backgroundColor="OE_Foreground" foregroundColor="un56c856" position="235,148" render="Progress" size="850,20" source="Frontend" transparent="1">
 	    <convert type="FrontendInfo">SNR</convert>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" position="1105,145" render="Label" size="120,45" source="Frontend" transparent="1">
+	<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" position="1105,143" render="Label" size="120,45" source="Frontend" transparent="1">
 	    <convert type="FrontendInfo">SNR</convert>
 	</widget>
-	<widget source="Frontend" position="1230,145" render="Label" size="150,45" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="left" transparent="1" zPosition="2">
+	<widget source="Frontend" position="1230,143" render="Label" size="150,45" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="left" transparent="1" zPosition="2">
 	    <convert type="FrontendInfo">SNRdB</convert>
 	</widget>
-	<eLabel backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="right" name="ber" position="65,185" size="120,45" text="BER:" transparent="1"/>
+	<eLabel backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="right" name="ber" position="65,184" size="120,45" text="BER:" transparent="1"/>
 	<widget borderColor="grey" borderWidth="2" pixmap="colors/000F6EB2.png" position="235,188" render="Progress" size="850,20" source="Frontend" transparent="1">
 	    <convert type="FrontendInfo">BER</convert>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="1105,185" render="Label" size="120,45" source="Frontend" transparent="1">
+	<widget backgroundColor="OE_Background" font="RegularBold;26" position="1105,183" render="Label" size="120,45" source="Frontend" transparent="1">
 	    <convert type="FrontendInfo">BER</convert>
 	</widget>
 	<eLabel text="TSID:" position="115,225" size="100,35" backgroundColor="OE_Background" zPosition="2" font="RegularBold;26" transparent="1"/>

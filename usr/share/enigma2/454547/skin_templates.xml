@@ -55,7 +55,7 @@
 		<convert type="TemplatedMultiContent">
 				  {"template": [ MultiContentEntryText(pos = (15, 12), size = (1095, 60), flags = RT_HALIGN_LEFT, text = 0) ],
 				  "fonts": [gFont("RegularBold", 33)],
-				  "itemHeight": 65
+				  "itemHeight": 64
 				  }
 		</convert>
 	</widget>
