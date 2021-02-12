@@ -2120,6 +2120,7 @@
   </screen>
 	<!-- SCAN IP -->
   <screen name="ScanIP" title="Scan IP" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+	<panel name="MandatoryWidgets"/>
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1070,270" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,340" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,470" size="900,2" zPosition="-9"/>
@@ -2127,14 +2128,14 @@
 	<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="170,413" size="900,50" transparent="1" valign="center" zPosition="3" foregroundColor="white"/>
 	<widget name="config" itemHeight="50" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,490" size="900,100" transparent="1" zPosition="3"/>
 	<!-- Button -->
-	<eLabel backgroundColor="white" name="" position="170,605" size="900,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="170,605" size="900,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,620" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="460,620" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="750,620" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="73,420" size="75,75" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" halign="left" valign="center" source="key_red" render="Label" position="215,620" size="240,40" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" halign="left" valign="center" source="key_green" render="Label" position="505,620" size="240,40" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" halign="left" valign="center" source="key_yellow" render="Label" position="795,620" size="280,40" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" halign="left" valign="center" source="key_red" render="Label" position="215,620" size="240,40" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" halign="left" valign="top" source="key_green" render="Label" position="505,610" size="240,55" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" halign="left" valign="center" source="key_yellow" render="Label" position="795,620" size="280,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<panel name="Clock"/>
   </screen>
@@ -2224,8 +2225,7 @@
 				}
 		</convert>
 	</widget>
-	<eLabel backgroundColor="blue_light" name="" position="97,877" size="1250,2" zPosition="-9"/>
-	<widget source="infotext" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="blue_light" position="97,895" size="1250,50" transparent="1" halign="center" valign="center"/>
+	<widget source="infotext" render="Label" position="1360,425" size="550,635" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
   <screen name="AutoMountEdit" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -2235,16 +2235,16 @@
   <screen name="AutoMountView" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget source="legend1" render="Label" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="center" position="170,150" size="325,95" transparent="1" valign="center"/>
-	<widget source="legend2" render="Label" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="center" position="495,150" size="650,95" transparent="1" valign="center"/>
-	<widget source="legend3" render="Label" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="center" position="1145,150" size="325,95" transparent="1" valign="center"/>
+	<widget source="legend1" render="Label" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="center" position="97,150" size="280,95" transparent="1" valign="center"/>
+	<widget source="legend2" render="Label" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="center" position="395,150" size="650,95" transparent="1" valign="center"/>
+	<widget source="legend3" render="Label" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="center" position="1000,150" size="325,95" transparent="1" valign="center"/>
 	<eLabel backgroundColor="blue_light" name="" position="97,250" size="1250,2" zPosition="-9"/>
 	<widget source="config" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="97,260" size="1250,680" transparent="1">
 	    <convert type="TemplatedMultiContent">
 						{"template": [
 			MultiContentEntryPixmapAlphaBlend(pos = (10, 2), size = (68, 68), png = 0), # index 0 is the isMounted pixmap
 			MultiContentEntryText(pos = (100, 0), size = (390, 40), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is the sharename
-			MultiContentEntryText(pos = (500, 15), size = (350, 40), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 2 is the IPdescription
+			MultiContentEntryText(pos = (520, 15), size = (350, 40), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 2 is the IPdescription
 			MultiContentEntryText(pos = (100, 40), size = (450, 40), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # index 3 is the DIRdescription
 			MultiContentEntryPixmapAlphaBlend(pos = (1060, 20), size = (68, 68), png = 4), # index 4 is the activepng pixmap
 			MultiContentEntryPixmapAlphaBlend(pos = (1110, 2), size = (68, 68), png = 5), # index 4 is the mounttype pixmap
