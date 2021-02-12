@@ -3748,6 +3748,7 @@
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
+	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="75,80" size="75,75" transparent="1" zPosition="1"/>
 	<!-- Widget -->
 	<widget source="Titel" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
 	<widget source="Titel2" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" halign="left" position="170,73" size="1250,50" transparent="1"/>
@@ -3760,20 +3761,20 @@
 	<ePixmap alphatest="blend" pixmap="454547/buttons/key_ok.png" position="170,885" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="454547/buttons/key_menu.png" position="500,885" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="454547/buttons/key_info.png" position="830,885" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="454547/buttons/key_help.png" position="1406,887" size="64,43"/>
-	<widget source="key_ok" render="Label" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" position="244,887" size="245,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_menu" render="Label" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" position="574,887" size="245,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_info" render="Label" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" position="904,887" size="245,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<ePixmap alphatest="blend" pixmap="454547/buttons/key_help.png" position="80,887" size="64,43"/>
+	<widget source="key_ok" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="white" position="244,887" size="245,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_menu" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="white" position="574,887" size="245,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_info" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="white" position="904,887" size="245,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="454547/buttons/key_red.png" position="170,960" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="454547/buttons/key_green.png" position="500,960" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="454547/buttons/key_yellow.png" position="830,960" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="454547/buttons/key_blue.png" position="1160,960" size="40,40"/>
-	<widget source="key_red" render="Label" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_green" render="Label" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_yellow" render="Label" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_blue" render="Label" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_red" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_green" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_yellow" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_blue" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="white" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<panel name="Clock"/>
   </screen>
@@ -3781,21 +3782,22 @@
   <screen name="CityPanel" title="Select a city" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
+	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="75,80" size="75,75" transparent="1" zPosition="1"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
-	<eLabel text="Select a city" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="Mlist" itemHeight="50" font="RegularBold;25" foregroundColorSelected="OE_Foreground" backgroundColorSelected="OE_Selection" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,165" size="1250,750" transparent="1"/>
+	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="170,73" size="1250,50" transparent="1"/>
+	<widget name="Mlist" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="170,165" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<ePixmap alphatest="blend" pixmap="454547/buttons/key_ok.png" position="1160,959" size="64,43"/>
-	<widget source="key_ok" render="Label" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" position="1234,960" size="240,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_ok" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="white" position="1234,960" size="240,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="454547/buttons/key_green.png" position="170,960" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="454547/buttons/key_yellow.png" position="500,960" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="454547/buttons/key_blue.png" position="830,960" size="40,40"/>
-	<widget source="key_green" render="Label" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_yellow" render="Label" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_blue" render="Label" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_green" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_yellow" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_blue" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<panel name="Clock"/>
   </screen>
@@ -3804,19 +3806,20 @@
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
+	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="75,80" size="75,75" transparent="1" zPosition="1"/>
 	<!-- Widget -->
-	<eLabel text="Satellite photos" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="Mlist" font="RegularBold;32" setPictScale="1" itemHeight="145" foregroundColorSelected="OE_Foreground" backgroundColorSelected="OE_Selection" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,165" size="1250,725" transparent="1"/>
+	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
+	<widget name="Mlist" font="RegularBold;32" itemHeight="145" scrollbarSliderForegroundColor="blue_light" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,165" size="1250,725" transparent="1"/>
 	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="454547/buttons/key_red.png" position="170,960" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="454547/buttons/key_green.png" position="500,960" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="454547/buttons/key_yellow.png" position="830,960" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="454547/buttons/key_blue.png" position="1160,960" size="40,40"/>
-	<widget source="key_red" render="Label" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_green" render="Label" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_yellow" render="Label" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_blue" render="Label" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_red" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_green" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_yellow" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_blue" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="white" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<panel name="Clock"/>
   </screen>
@@ -3825,9 +3828,10 @@
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
+	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="75,80" size="75,75" transparent="1" zPosition="1"/>
 	<!-- Widget -->
-	<eLabel text="Satellite photos" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="Mlist" font="RegularBold;32" setPictScale="1" itemHeight="145" foregroundColorSelected="OE_Foreground" backgroundColorSelected="OE_Selection" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,165" size="1250,725" transparent="1"/>
+	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
+	<widget name="Mlist" font="RegularBold;32" itemHeight="145" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="170,165" size="1250,725" transparent="1"/>
 	<!-- Clock -->
 	<panel name="Clock"/>
   </screen>
@@ -3836,15 +3840,16 @@
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
+	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="75,80" size="75,75" transparent="1" zPosition="1"/>
 	<!-- Widget -->
 	<eLabel text="SlideShow Settings" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
 	<widget name="Mlist" itemHeight="50" font="RegularBold;25" secondfont="Regular;28" backgroundColorSelected="OE_Selection" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,165" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="454547/buttons/key_red.png" position="170,960" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="454547/buttons/key_green.png" position="500,960" size="40,40"/>
-	<widget source="key_red" render="Label" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_green" render="Label" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_red" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_green" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<panel name="Clock"/>
   </screen>
@@ -3852,7 +3857,7 @@
   <screen name="ForecaPreviewCache" title="" backgroundColor="transparent" flags="wfNoBorder" position="85,73" size="50,50" zPosition="8">
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="OE_Background" name="" position="0,0" size="50,50" zPosition="-11" valign="center"/>
 	<!-- Widget -->
-	<widget name="spinner" alphatest="blend" position="0,0" size="50,50" backgroundColor="OE_NewBg"/>
+	<widget name="spinner" alphatest="blend" position="1200,50" size="50,50" backgroundColor="OE_NewBg"/>
   </screen>
 
 
@@ -5884,8 +5889,8 @@
   <screen name="SubsChooser" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="file_list" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="97,140" size="1250,740" transparent="1"/>
-	<widget name="menu_list" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="97,970" size="1250,75" transparent="1"/>
+	<widget name="file_list" itemHeight="50" backgroundColor="OE_Background" foregroundColor="white" position="97,140" size="1250,740" transparent="1"/>
+	<widget name="menu_list" backgroundColor="OE_Background" foregroundColor="white" position="97,965" size="1250,80" transparent="1"/>
 	<!-- others-->
 	<ePixmap alphatest="blend" pixmap="454547/buttons/key_exit.png" position="18,980" size="64,43"/>
   </screen>
@@ -5897,7 +5902,7 @@
 	<widget source="sourceTitle" render="Label" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="blue_light" position="97,210" size="1250,50" transparent="1"/>
 	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="97,280" size="1250,670" transparent="1"/>
 	<ePixmap alphatest="blend" pixmap="454547/buttons/key_blue.png" position="97,980" size="40,40"/>
-	<eLabel text="Choose subtitles" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="white" halign="left" valign="center" position="190,980" size="470,40" transparent="1" zPosition="1"/>
+	<eLabel text="Subtitles" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="white" halign="left" valign="center" position="150,980" size="470,40" transparent="1" zPosition="1"/>
   </screen>
 
   <screen name="SubsSupportSettings" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -6119,7 +6124,6 @@
 		<convert type="ConditionalShowHide"/>
 	</widget>
 	<!-- Clock -->
-	<eLabel backgroundColor="blue_light" position="1475,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="Clock"/>
   </screen>
 
@@ -6197,7 +6201,7 @@
 	<panel name="TemplatePip"/>
 	<widget source="header_name" render="Label" position="97,145" size="360,35" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light"/>
 	<widget source="header_provider" render="Label" position="620,145" size="300,35" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light"/>
-	<widget source="header_date" render="Label" position="1060,145" size="325,35" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light"/>
+	<widget source="header_date" render="Label" position="1025,145" size="325,35" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light"/>
 	<widget source="subtitles" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="97,190" size="1250,700" zPosition="3" transparent="1">
 	    <convert type="TemplatedMultiContent">
 					{"templates":

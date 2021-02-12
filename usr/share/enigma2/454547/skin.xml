@@ -815,7 +815,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="165,130" size="1065,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="170,73" size="1060,50" transparent="1"/>
+	<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="170,80" size="1060,50" transparent="1"/>
 	<widget name="config" itemHeight="50" font="RegularBold;30" position="150,155" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" size="1060,250" transparent="1" zPosition="3"/>
 	<widget position="170,435" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" size="1060,500" source="streams" transparent="1" zPosition="3">
 	    <convert type="TemplatedMultiContent">
@@ -1437,7 +1437,7 @@
 	    <convert type="EventTime">Progress</convert>
 	</widget>
 	<widget name="channel" font="RegularBold;34" backgroundColor="OE_Background" position="380,90" size="830,50" halign="left" transparent="1"/>
-	<widget name="epg_description" position="380,160" size="1460,750" backgroundColor="OE_Background" font="RegularBold;28" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
+	<widget name="epg_description" position="380,160" size="1460,765" backgroundColor="OE_Background" font="RegularBold;26" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
 	<widget source="Event" render="Label" font="RegularBold;28" position="110,160" size="100,45" zPosition="2" backgroundColor="OE_NewBg2" transparent="1">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
@@ -1972,7 +1972,7 @@
 	    <convert type="ServiceTime">Duration</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold;22" halign="left" position="100,675" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="925,295" source="Service" transparent="1" valign="top">
+	<widget backgroundColor="OE_Background" font="RegularBold;22" halign="left" position="100,675" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="925,285" source="Service" transparent="1" valign="top">
 	    <convert type="EventName">ExtendedDescription</convert>
 	</widget>
 	<widget name="movie_sort" pixmaps="/usr/share/enigma2/skin_default/icons/az.png,/usr/share/enigma2/skin_default/icons/newtop.png,/usr/share/enigma2/skin_default/icons/shuffle.png,/usr/share/enigma2/skin_default/icons/za.png,/usr/share/enigma2/skin_default/icons/oldtop.png,/usr/share/enigma2/skin_default/icons/faz.png,/usr/share/enigma2/skin_default/icons/fza.png,/usr/share/enigma2/skin_default/icons/default.png" position="25,890" size="35,20" transparent="1" alphatest="on"/>
