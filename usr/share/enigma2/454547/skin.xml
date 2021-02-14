@@ -3557,7 +3557,7 @@
 	<panel name="ScreenOpenVision"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,155" zPosition="10" size="1490,670" transparent="1"/>
 	<eLabel backgroundColor="blue_light" position="410,830" size="1490,2" zPosition="2"/>
-	<widget source="description" render="Label" font="RegularBold;28" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,848" size="1490,85" transparent="1" halign="center" valign="center"/>
+	<widget source="description" render="Label" font="RegularBold;26" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,848" size="1490,70" transparent="1" halign="center" valign="center"/>
   </screen>
 	<!-- FLASHIMAGE -->
   <screen name="FlashImage" position="fill" zPosition="10" flags="wfNoBorder">
@@ -3565,7 +3565,7 @@
 	<widget name="header" position="410,155" size="1490,85" zPosition="10" font="RegularBold;30" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="progress" backgroundColor="OE_Background" position="410,270" size="1490,85" zPosition="10" transparent="1"/>
 	<eLabel backgroundColor="blue_light" position="410,830" size="1490,2" zPosition="2"/>
-	<widget name="info" font="RegularBold;28" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,848" size="1490,85" transparent="1" zPosition="10" halign="center" valign="center"/>
+	<widget name="info" font="RegularBold;24" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,848" size="1490,90" transparent="1" zPosition="10" halign="center" valign="center"/>
   </screen>
 	<!-- AUTO BACKUP -->
   <screen name="Config" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
