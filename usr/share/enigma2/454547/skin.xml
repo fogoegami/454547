@@ -455,7 +455,7 @@
 	    <convert type="ValueRange">721,1280</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="blend" pixmap="my_icons/RegularBold_on.png" position="1783,870" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="3">
+	<widget alphatest="blend" pixmap="my_icons/fhd_on.png" position="1783,870" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="3">
 	    <convert type="ServiceInfo">VideoWidth</convert>
 	    <convert type="ValueRange">1281,1920</convert>
 	    <convert type="ConditionalShowHide"/>
@@ -626,7 +626,7 @@
 	    <convert type="ValueRange">721,1280</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="blend" pixmap="my_icons/RegularBold_on.png" position="1622,967" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="3">
+	<widget alphatest="blend" pixmap="my_icons/fhd_on.png" position="1622,967" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="3">
 	    <convert type="ServiceInfo">VideoWidth</convert>
 	    <convert type="ValueRange">1281,1920</convert>
 	    <convert type="ConditionalShowHide"/>
@@ -1479,7 +1479,7 @@
 	    <convert type="ValueRange">721,1280</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="blend" pixmap="my_icons/RegularBold_on.png" position="80,490" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="3">
+	<widget alphatest="blend" pixmap="my_icons/fhd_on.png" position="80,490" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="3">
 	    <convert type="ServiceInfo">VideoWidth</convert>
 	    <convert type="ValueRange">1281,1920</convert>
 	    <convert type="ConditionalShowHide"/>
@@ -1887,7 +1887,7 @@
 	    <convert type="ValueRange">721,1280</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="blend" pixmap="my_icons/RegularBold_on.png" position="1357,993" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="3">
+	<widget alphatest="blend" pixmap="my_icons/fhd_on.png" position="1357,993" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="3">
 	    <convert type="ServiceInfo">VideoWidth</convert>
 	    <convert type="ValueRange">1281,1920</convert>
 	    <convert type="ConditionalShowHide"/>
