@@ -1514,18 +1514,18 @@
 	<panel name="MultiEPGEventView"/>
 	<widget name="date" backgroundColor="OE_Background" font="RegularBold;30" foregroundColor="blue_light" halign="center" position="65,75" size="300,43" transparent="1" zPosition="2"/>
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_NewBg2" foregroundColor="white" position="65,15" size="300,50" halign="center" valign="center" transparent="1"/>
-	<widget source="Service" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="380,85" size="830,50" transparent="1">
+	<widget source="Service" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="380,90" size="830,50" transparent="1">
 	    <convert type="ServiceName">Name</convert>
 	</widget>
 	<widget name="now_text" text="NOW" backgroundColor="OE_NewBg2" font="RegularBold;30" foregroundColor="white" halign="center" position="104,178" size="223,43" transparent="1" zPosition="2"/>
 	<widget name="next_text" text="NEXT" backgroundColor="OE_NewBg2" font="RegularBold;30" foregroundColor="white" halign="center" position="104,263" size="223,43" transparent="1" zPosition="2"/>
 	<widget name="more_text" text="MORE" backgroundColor="OE_NewBg2" font="RegularBold;30" foregroundColor="white" halign="center" position="104,349" size="223,43" transparent="1" zPosition="2"/>
-	<widget alphatest="blend" name="now_button_sel" pixmap="colors/epg_label.png" position="101,175" size="229,49" transparent="1" zPosition="2"/>
-	<widget alphatest="blend" name="now_button" pixmap="colors/epg_label.png" position="101,175" size="0,0" transparent="1" zPosition="2"/>
-	<widget alphatest="blend" name="next_button" pixmap="colors/epg_label.png" position="101,260" size="0,0" transparent="1" zPosition="2"/>
-	<widget alphatest="blend" name="next_button_sel" pixmap="colors/epg_label.png" position="101,260" size="229,49" transparent="1" zPosition="2"/>
-	<widget alphatest="blend" name="more_button" pixmap="colors/epg_label.png" position="101,346" size="0,0" transparent="1" zPosition="2"/>
-	<widget alphatest="blend" name="more_button_sel" pixmap="colors/epg_label.png" position="101,346" size="229,49" transparent="1" zPosition="2"/>
+	<widget alphatest="blend" name="now_button_sel" pixmap="colors/epg_label.png" position="101,170" size="229,49" transparent="1" zPosition="2"/>
+	<widget alphatest="blend" name="now_button" pixmap="colors/epg_label.png" position="101,170" size="0,0" transparent="1" zPosition="2"/>
+	<widget alphatest="blend" name="next_button" pixmap="colors/epg_label.png" position="101,255" size="0,0" transparent="1" zPosition="2"/>
+	<widget alphatest="blend" name="next_button_sel" pixmap="colors/epg_label.png" position="101,255" size="229,49" transparent="1" zPosition="2"/>
+	<widget alphatest="blend" name="more_button" pixmap="colors/epg_label.png" position="101,340" size="0,0" transparent="1" zPosition="2"/>
+	<widget alphatest="blend" name="more_button_sel" pixmap="colors/epg_label.png" position="101,340" size="229,49" transparent="1" zPosition="2"/>
 	<widget name="list" font="RegularBold;28" itemHeight="50" setEventItemFont="RegularBold;26" setEventTimeFont="RegularBold;26" setColWidths="290,180" setColGap="20" setTimeWidth="155" setIconDistance="10" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="380,155" size="1460,550" transparent="1"/>
 	<widget alphatest="blend" position="100,415" render="Picon" size="220,130" source="Service" transparent="1" zPosition="5">
 	    <convert type="ServiceName2">Reference</convert>
