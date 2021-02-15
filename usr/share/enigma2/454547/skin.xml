@@ -3648,15 +3648,15 @@
 	<widget name="labserialno" position="400,540" size="410,50" font="RegularBold;26" valign="center" backgroundColor="#4D5375"/>
 	<widget name="sharedir" position="97,640" size="300,60" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="labsharedir" position="400,640" size="410,50" font="RegularBold;26" valign="top" backgroundColor="#4D5375"/>
-	<widget name="inotify" position="97,740" size="200,70" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="inotifyinactive" position="370,755" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="blend"/>
-	<widget name="inotifyactive" position="370,755" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="blend"/>
-	<widget name="dlna" position="97,820" size="250,50" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="dlnainactive" position="370,835" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="blend"/>
-	<widget name="dlnaactive" position="370,835" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="blend"/>
-	<widget name="tivo" position="97,900" size="250,50" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="tivoinactive" position="370,915" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="blend"/>
-	<widget name="tivoactive" position="370,915" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="blend"/>
+	<widget name="inotify" position="97,735" size="300,70" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="inotifyinactive" position="400,756" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="blend"/>
+	<widget name="inotifyactive" position="400,756" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="blend"/>
+	<widget name="dlna" position="97,820" size="280,50" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="dlnainactive" position="400,835" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="blend"/>
+	<widget name="dlnaactive" position="400,835" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="blend"/>
+	<widget name="tivo" position="97,900" size="280,50" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="tivoinactive" position="400,915" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="blend"/>
+	<widget name="tivoactive" position="400,915" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="blend"/>
   </screen>
 	<!-- USHARE-->
   <screen name="NetworkuShare" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -3729,11 +3729,11 @@
 	<widget name="labrun" position="650,140" size="350,50" font="RegularBold;26" halign="center" backgroundColor="green" zPosition="2"/>
 	<widget name="time" position="97,240" size="400,70" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="labtime" position="510,250" size="490,50" font="RegularBold;26" valign="center" backgroundColor="#4D5375"/>
-	<widget name="username" position="97,350" size="300,50" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="username" position="97,350" size="400,50" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="labuser" position="510,350" size="490,50" font="RegularBold;26" valign="center" backgroundColor="#4D5375"/>
-	<widget name="password" position="97,450" size="230,50" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="password" position="97,450" size="400,50" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="labpass" position="510,450" size="490,50" font="RegularBold;26" valign="center" backgroundColor="#4D5375"/>
-	<widget name="alias" position="97,550" size="150,50" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="alias" position="97,550" size="400,50" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="labalias" position="510,550" size="490,50" font="RegularBold;26" valign="center" backgroundColor="#4D5375"/>
 	<widget name="sinactive" position="97,665" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="blend"/>
 	<widget name="sactive" position="97,665" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="blend"/>
