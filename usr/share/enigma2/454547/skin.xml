@@ -238,7 +238,11 @@
   </screen>
 	<!-- VIDEO MODE-->
   <screen name="VideoMode" title="VideoMode" backgroundColor="transparent" flags="wfNoBorder" position="0,50" size="500,92" zPosition="8">
-	<widget name="videomode" position="445,480" size="1420,515" font="RegularBold;28" backgroundColor="OE_Background" transparent="1" valign="center" halign="right"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="OE_Background" name="" position="0,0" size="500,45" zPosition="-11" valign="center"/>
+	<eLabel backgroundColor="white" position="0,45" size="500,2"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,47" size="500,45" zPosition="-15"/>
+	<eLabel text="VideoMode" position="0,0" size="480,45" font="RegularBold;28" backgroundColor="OE_NewBg" transparent="1" valign="center" halign="right" foregroundColor="white"/>
+	<widget name="videomode" position="0,47" size="480,45" font="RegularBold;28" backgroundColor="OE_Background" transparent="1" valign="center" halign="right"/>
   </screen>
 	<!-- START WIZARD-->
   <screen name="StartWizard" title="Start Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
