@@ -210,6 +210,7 @@
 	<!-- LANGUAJE WIZARD-->
   <screen name="LanguageWizard" title="Language Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateWizard"/>
+	<panel name="TemplateRemoteControl"/>
 	<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,170" size="1420,90" transparent="1"/>
 	<eLabel backgroundColor="#0000fafa" name="" position="445,275" size="1460,2" zPosition="-8"/>
 	<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="445,280" size="1460,715" transparent="1">
@@ -225,6 +226,7 @@
 	<!-- VIDEO WIZARD-->
   <screen name="VideoWizard" title="Video Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateWizard"/>
+	<panel name="TemplateRemoteControl"/>
 	<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,160" size="1460,300" transparent="1"/>
 	<eLabel backgroundColor="#0000fafa" name="" position="445,470" size="1460,2" zPosition="-9"/>
 	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,480" size="1460,525" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1">
@@ -246,6 +248,7 @@
 	<!-- START WIZARD-->
   <screen name="StartWizard" title="Start Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateWizard"/>
+	<panel name="TemplateRemoteControl"/>
 	<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,130" size="1460,200" transparent="1"/>
 	<eLabel text="Progress:" font="RegularBold;34" backgroundColor="OE_Background" position="445,335" size="215,45" transparent="1"/>
 	<eLabel backgroundColor="#0000fafa" name="" position="445,385" size="1460,2" zPosition="-9"/>
@@ -1621,14 +1624,9 @@
 	<widget name="long_key" position="230,1040" size="375,40" backgroundColor="OE_Background" foregroundColor="blue_light" font="RegularBold;26" transparent="1"/>
   </screen>
   <screen name="HelpMenuNew" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-	<panel position="60,center" size="150,500">
-		<panel name="TemplateRemoteControl" />
-	</panel>
-	<!--
-	 |	To display the extended help for the current item in a description widget instead of in
-	 |	a second line in the help list, change the size of the description wizard to something
-	 |	appropriate (e.g. "280,44") and change over to the commented out "extended" template below.
-	 +-->
+	<panel name="TemplateRemoteControl"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="90,980" size="64,43"/>
+	<widget name="rc" pixmaps="rc.png,rcold.png" position="60,center" size="150,500" alphatest="blend" backgroundColor="transparent" zPosition="10" />
 	<widget source="list" render="Listbox" position="214,145" size="1130,850" backgroundColor="OE_Background" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1">
 		<convert type="TemplatedMultiContent">
 			{
@@ -4765,5 +4763,5 @@
 	<eLabel position="1,44" size="419,1" backgroundColor="blue_light" zPosition="3"/>
 	<eLabel position="419,0" size="1,44" backgroundColor="blue_light" zPosition="3"/>
 	<widget name="status" position="0,5" size="420,35" backgroundColor="OE_NewBg2" transparent="1" font="RegularBold;24" valign="center" halign="center" zPosition="100"/>
-  </screen>  
+  </screen>
 </skin>
